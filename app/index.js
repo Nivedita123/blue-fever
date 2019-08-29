@@ -63,7 +63,7 @@ clock.ontick = (evt) => {
 if (HeartRateSensor) {
     const hrm = new HeartRateSensor({ frequency: 1 });
     if (!BodyPresenceSensor) {
-        heartRate.text = '--';
+        //heartRate.text = '--';
     }
     hrm.addEventListener("reading", () => {
         heartRate.text = hrm.heartRate ? hrm.heartRate.toString() : '--'
@@ -102,7 +102,7 @@ else { // imperial
 cals.text = today.adjusted.calories.toLocaleString("en-US");
 
 // display floors
-floors.text = today.adjusted.floors ? today.adjusted.floors : '0';
+floors.text = today.adjusted.elevationGain ? today.adjusted.elevationGain : '0';
 
 // display date
 var d = new Date();

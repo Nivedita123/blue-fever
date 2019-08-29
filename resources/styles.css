@@ -12,49 +12,49 @@ text {
 .top-stats {
   text-anchor: middle;
   y: 15%;
-  font-size: 18;
+  font-size: 20;
   font-family: "System-Bold";
   width: 25%;
 }
 
 .top-stats-desc {
   text-anchor: middle;
-  y: 20%;
-  font-size: 16;
+  y: 22%;
+  font-size: 22;
   width: 25%;
 }
 
 .top-stats-icon {
-  width: 24;
-  height: 24;
-  y: 30%;
+  width: 32;
+  height: 32;
+  y: 35%;
   fill: white;
 }
 
 .bottom-stats {
   text-anchor: middle;
   y: 90%;
-  font-size: 22;
+  font-size: 26;
 }
 
 .bottom-stats-icon {
-  y: 70%;
+  y: 68%;
   fill: white;
-  width: 24;
-  height: 24;
+  width: 32;
+  height: 32;
 }
 
 .date {
   x: 50%;
   y: 90%;
-  font-size: 20;
+  font-size: 24;
   text-anchor: middle;
 }
 
 .clock {
   x: 50%;
   y: 80%;
-  font-size: 70;
+  font-size: 75;
   text-anchor: middle;
   font-family: "System-Bold";
 }
