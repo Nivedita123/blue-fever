@@ -1,51 +1,50 @@
 <svg>
-  
   <g id = "bar-stats">
     <!--Steps-->
     <g id="steps-container">
-      <rect class="stats-bg" x="0" height="50%" fill="#2c2987" />
-      <rect class="clock-bg" x="0" y="50%" height="50%" fill="#1d1d1d" />
-      <text x="12%" class="top-stats" id="steps-val">99,999</text>
+      <rect class="stats-bg" id ="bg1" x="0"/>
+      <rect class="clock-bg" x="0" fill="#1d1d1d" />
+      <text x="12%" class="top-stats" id="steps-val"></text>
       <text x="12%" class="top-stats-desc">Steps</text>
       <image x="12%-12" class="top-stats-icon" href="img/stat_steps_open_24px.png" />
     </g> 
     <!--Floors-->
     <g id="floors-container">
-      <rect class="stats-bg" x="25%" height="50%" fill="#0f71a6" />
-      <rect class="clock-bg" x="25%" y="50%" height="50%" fill="#2d2d2d" />
-      <text x="37%" class="top-stats" id="floors-val">99</text>
+      <rect class="stats-bg" id ="bg2" x="25%"/>
+      <rect class="clock-bg" x="25%" fill="#2d2d2d" />
+      <text x="37%" class="top-stats" id="floors-val"></text>
       <text x="37%" class="top-stats-desc">Floors</text>
       <image x="37%-12" class="top-stats-icon" href="img/stat_floors_open_24px.png" />
     </g> 
-    <!--Miles-->
-    <g id="miles-container">
-      <rect class="stats-bg" x="50%" height="50%" fill="#32c2a3" />
-      <rect class="clock-bg" x="50%" y="50%" height="50%" fill="#3d3d3d" />
-      <text x="62%" class="top-stats" id="miles-val">50.66</text>
-      <text x="62%" class="top-stats-desc">Miles</text>
-      <image x="62%-12" class="top-stats-icon" href="img/stat_steps_open_24px.png" />
+    <!--Distance-->
+    <g id="distance-container">
+      <rect class="stats-bg" id ="bg3" x="50%"/>
+      <rect class="clock-bg" x="50%" fill="#3d3d3d" />
+      <text x="62%" class="top-stats" id="distance-val"></text>
+      <text x="62%" class="top-stats-desc" id="distance-unit">km</text>
+      <image x="62%-12" class="top-stats-icon" href="img/stat_distance_open_24px.png" />
     </g> 
     <!--Calories-->
     <g id="calories-container">
-      <rect class="stats-bg" x="75%" height="50%" fill="#586694" />  
-      <rect class="clock-bg" x="75%" y="50%" height="50%" fill="#4d4b4d" /> 
-      <text x="87%" class="top-stats" id="calories-val">5,566</text>
+      <rect class="stats-bg" id ="bg4" x="75%"/>  
+      <rect class="clock-bg" x="75%" fill="#4d4b4d" /> 
+      <text x="87%" class="top-stats" id="calories-val"></text>
       <text x="87%" class="top-stats-desc">kCal</text>
       <image x="87%-12" class="top-stats-icon" href="img/stat_cals_open_24px.png" />
     </g> 
   </g>  
 
   <!--Clock-time-->
-  <text class="clock">05:56</text>
+  <text class="clock" id="clock-val"></text>
 
   <!--Date-->
-  <text class = "date">Thu, Nov 30</text>
+  <text class="date" id="date-val"></text>
 
-  <!--Temperature-->
-  <image x="10%-12" class="bottom-stats-icon" href="img/stat_am_solid_24px.png" />
-  <text x="10%" class="bottom-stats" >99 C</text>
+  <!--Battery level-->
+  <image x="10%-12" class="bottom-stats-icon" id="active-img" href="img/stat_am_solid_24px.png" />
+  <text x="10%" class="bottom-stats" id="active-val"></text>
   <!--Heart Rate-->
   <image x="90%-12" class="bottom-stats-icon" href="img/stat_hr_solid_24px.png" />
-  <text x="90%" class="bottom-stats" >200</text>
+  <text x="90%" class="bottom-stats" id="hr-val"></text>
 
 </svg>

@@ -1,6 +1,7 @@
 text {
   font-family: "System-Regular";
   fill: white;
+  text-length: 50;
 }
 
 #bar-stats {
@@ -61,8 +62,11 @@ text {
 .stats-bg {
   y: 0;
   width: 25%;
+  height: 50%;
 }
 
 .clock-bg {
   width: 25%;
+  height: 50%;
+  y: 50%;
 }
